@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   get 'admin/dashboard'
 
   get 'footer/podminky'
@@ -19,7 +20,7 @@ Rails.application.routes.draw do
 
   get 'home/cenik'
 
-  get 'home/kontakty'
+  get 'home/kontakty', as: 'kontakts_path'
 
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
