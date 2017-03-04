@@ -1,28 +1,20 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Základní příkazy pro práci s DB.
 
-Things you may want to cover:
+rake db:drop
+rake db:create
+rake db:migrate
+rake db:seed
 
-* Ruby version
+Základní příkazy pro rails
 
-* System dependencies
+vytvoreni controlleru
+rails g controller nazevControlleru nazevAkce nazevAkce
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+nazevAkce = nazev stranky
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Spusteni serveru v developu pres ruby mine, run development
+
+Debugging - kdyz kliknes v rubyMine vedle cisla radku, objevi se na danem miste cervena tecka. Pokud spustit "brouka" tak se na danem miste beh zastavi a muzes projit kompletni vypis, ktery ti tam zrovna de. Pokud to udelas na viewu, tak s kombinaci s F12 kou v prohlížeči můžeš zjistit spoustu věcí
