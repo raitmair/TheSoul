@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :currencies
+  resources :prices
   root 'home#index'
   get 'admin/dashboard'
 
