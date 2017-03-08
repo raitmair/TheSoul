@@ -1,2 +1,6 @@
 <h1>Home#pohyb</h1>
+<% @movement_articles.each do |article| %>
+    <p2><%= article.title %></p2>
+    <p><%= article.text.html_safe %></p>
+<% end %>
 <p>Find me in app/views/home/pohyb.html.erb</p>

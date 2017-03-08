@@ -35,10 +35,39 @@ TheSoul je Vaším osobním masérem terapeutem, trenérem i výživovým poradc
 
 
 #clanky na str.pohyb
-
+Article.find_or_create_by!(:title => 'Aktivní pohyb', :text => 'Chcete-li své tělo plně funkčně a zdravě používat,
+zpevnit, vyrýsovat, či zhubnout, pojďme společně trénovat.<br>
+Klienta vedu osobně, pomáhám s osvojením správných technik cvičení a cviků, dýchání, kontroluji správné provedení,
+určuji zátěž a intenzitu cvičení a poskytuji konzultace k tréninku. Společně s klientem sledujeme vývoj a změny,
+upravujeme trénink i konkrétní situaci.<br><br>
+Svou fyzickou kondici můžete zlepšit jedině pravidelným tréninkem. Ovšem, mějte na paměti, že trénink/aktivní pohyb
+jedenkrát týdně je skutečně velmi málo. Také nejíme jen jedenkrát týdně, abychom žili.<br>
+Mé tréninky vždy obsahují cviky se zapojením hlubokého stabilizačního systému (HSSP = CORE). Cvičím s Bosu®, TRX®  i s
+jinými závěsnými a balančními systémy a pomůckami, kettlebelly i činkami, čas od času využijeme i stroje. Společně se
+mnou si  můžete užít také kruhové, intervalové či tabata tréninky.<br><br>
+Statický posilovací trénink v posilovně jen na strojích (většinou jen pro jednotlivé svalové partie) není úplně
+nejvhodnějším řešením pro všeobecně zdravé a funkční tělo a rozhodně není řešením pro všechny. Síla není tím
+nejdůležitějším pro Vaši kondici a zdraví.<br><br>
+Osobní i skupinový trénink mohu nabídnout v partnerském fitness centru ChrpaSport či v Centru Filipovka, při pěkném
+počasí v outdoorové variantě v Kunratickém lese nebo relax parku u Chodovské tvrze a nebo také ve Vašem fitness centru
+(jednotlivé vstupy do klientova fitness centra platí trenérovi klient).<br><br>
+Nabízím i možnost párového či skupinového tréninku. Ve fitness centru pro maximálně dva klienty současně
+(vyjma skupinových lekcí), v případě outdoorového tréninku maximálně pro 5 klientů.<br><br>
+Skupinové lekce si pojďte užít každou středu v Centru Filipovka od 19:00 hod., vstupné je 100,- Kč/osoba.<br><br>
+Taktéž ve Filipovce se chystám aktivně se hýbat se seniory i maminkami (s dětmi) na rodičovské dovolené a to v
+dopoledních hodinách.', :is_published => 't', :category_id => 2)
 
 #clanky na str.vyziva
-
+Article.find_or_create_by!(:title => 'Poradenství zdravého stravování', :text => 'Koukáte do zrcadla a netušíte na koho?
+Kvůli zavázání tkaniček sedáte do širokého sedu roznožného a tajíte dech? Loňské oblečení se Vám poněkud „srazilo“?<br><br>
+Nebo prostě jen chcete být spokojení, líbit se sami sobě a být na sebe (a tedy i své tělo) hrdí?<br><br>
+Společně zhodnotíme Vaše dosavadní stravovací návyky. Navrhnu Vám optimální složení, časový rozvrh a zastoupení živin v
+jídelníčku. Společně budeme pravidelně konzultovat Vaše zvykání si a zavádění zdravých stravovacích návyků. Budete-li si
+přát, můžu pro Vás na míru sestavit vzorový jednodenní jídelníček s ohledem na Váš cíl a zdravotní stav i denní režim.
+<br><br>Zavádět nové stravovací návyky nebude možná tak náročné, jako jejich dodržování. S tím vším Vám jakožto výživová
+poradkyně mohu pomoci.<br><br>
+Každý máme svůj specifický metabolismus, stravovací návyky, chutě, potřeby. Na prvním místě je zdraví klienta, jeho
+individuální potřeby a nároky a vedle toho i možnost kompromisu.', :is_published => 't', :category_id => 3)
 
 #clanky na str.masaze
 Article.find_or_create_by!(:title => 'Masáže, masážní terapie a techniky', :text => 'Rozhodnete-li se zajít si na masáž
