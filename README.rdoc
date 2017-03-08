@@ -1,4 +1,6 @@
 == README
+Po mergi nutno vytvorit soubor database.yml v adresari config a nakonfigurovat mysql. Priklad je v example_database.yml.txt
+pote je nutne spustit migraci a seed, aby se projevily zmeny
 
 Základní příkazy pro práci s DB.
 
