@@ -33,9 +33,6 @@ ActiveRecord::Schema.define(version: 20170308141858) do
 
   create_table "currencies", force: :cascade do |t|
     t.string "name", limit: 255
-    t.string "create", limit: 255
-    t.string "update", limit: 255
-    t.string "destroy", limit: 255
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

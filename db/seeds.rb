@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #/   Mayor.create(name: 'Emanuel', city: cities.first)
 
+#promazani db pro potrebu drobnych uprav
+Article.destroy_all
+
+
 #create categories for articles
 Category.find_or_create_by!(:name => 'index')
 Category.find_or_create_by!(:name => 'masaze')
@@ -22,7 +26,7 @@ PriceCategory.find_or_create_by!(:name => 'Trening')
 PriceCategory.find_or_create_by!(:name => 'Vyziva')
 
 #create articles
-Article.destroy_all
+
 
 #clanky na indexu
 Article.find_or_create_by!(:title => 'The Soul', :text => 'Každé tělo vypráví svůj příběh. Zrcadlí naše koníčky, zvyky,
@@ -137,6 +141,13 @@ Masáž v žádném případě nemůže nahradit odbornou lékařskou péči. V�
 závažnějších onemocnění, je nutno uvědomit lékaře. Některé masáže lze aplikovat i během těhotenství, ale je třeba zvážit
 výběr a použití esenciálních olejů. Výběr olejů je třeba pečlivě zvážit i u masáží malých dětí.', :is_published => 't',
                            :category_id => 1)
-#cenik
+#cenik_kategorie
+PriceCategory.find_or_create_by!(:name => 'Ceník masáží:')
+PriceCategory.find_or_create_by!(:name => 'Ceník tréninků aktivního pohybu:')
+PriceCategory.find_or_create_by!(:name => 'Ceník výživového poradenství:')
 
+#cenik_currency
+Currency.find_or_create_by!(:name => 'Kč/hod')
+Currency.find_or_create_by!(:name => 'Kč/10 předplacených hodin')
+Currency.find_or_create_by!(:name => 'Kč/30 minut')
 #kontakty
