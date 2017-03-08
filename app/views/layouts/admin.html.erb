@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav>
+  <a><%= link_to 'Sprava clanku', :articles %></a>
+  <a><%= link_to 'Sprava ceniku', :prices %></a>
+</nav>
 <%= yield %>
 </body>

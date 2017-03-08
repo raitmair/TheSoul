@@ -20,4 +20,19 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      article: "Clanek"
+    attributes:
+      article:
+        title: "Titulek"
+        text: "Text"
+    errors:
+      models:
+        article:
+          attributes:
+            title:
+              blank: "musi byt zadan!"
+            text:
+              blank: "musi byt zadan!"
+

@@ -13,7 +13,6 @@ Currency.destroy_all
 
 
 #create categories for articles
-Category.find_or_create_by!(:name => 'index')
 Category.find_or_create_by!(:name => 'masaze')
 Category.find_or_create_by!(:name => 'pohyb')
 Category.find_or_create_by!(:name => 'vzyiva')
@@ -21,6 +20,7 @@ Category.find_or_create_by!(:name => 'kontakt')
 Category.find_or_create_by!(:name => 'podminky')
 Category.find_or_create_by!(:name => 'certifikaty')
 Category.find_or_create_by!(:name => 'partneri')
+Category.find_or_create_by!(:name => 'index')
 
 #create categories for pricelist
 PriceCategory.find_or_create_by!(:name => 'Masaze')
