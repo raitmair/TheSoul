@@ -8,6 +8,8 @@
 
 #promazani db pro potrebu drobnych uprav
 Article.destroy_all
+Price.destroy_all
+Currency.destroy_all
 
 
 #create categories for articles

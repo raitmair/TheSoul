@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :currencies
+  resources :articles
   resources :prices
   root 'home#index'
   get 'admin', to: 'admin#dashboard', as: 'admin'
@@ -24,7 +25,7 @@ Rails.application.routes.draw do
 
   get 'home/kontakty', as: 'kontakts_path'
 
-  resources :articles
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
