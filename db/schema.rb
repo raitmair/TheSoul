@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20170308141858) do
 
   create_table "prices", force: :cascade do |t|
     t.string "name", limit: 255
-    t.decimal "price", precision: 10
+    t.float "price", limit: 24
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "price_category_id", limit: 4

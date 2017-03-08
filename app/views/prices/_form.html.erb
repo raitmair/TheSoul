@@ -20,8 +20,10 @@
       <%= f.text_field :price %>
     </div>
     <div class="field">
-      <%= f.label :price %><br>
-      <%= f.text_field :price %>
+      <%= f.collection_select :price_category_id, PriceCategory.all, :id, :name %><br>
+    </div>
+    <div class="field">
+      <%= f.collection_select :currency_id, Currency.all, :id, :name %><br>
     </div>
     <div class="actions">
       <%= f.submit %>
