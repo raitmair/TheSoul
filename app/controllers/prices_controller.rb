@@ -1,4 +1,5 @@
 class PricesController < ApplicationController
+  layout "admin"
   before_action :set_price, only: [:show, :edit, :update, :destroy]
 
   # GET /prices
