@@ -7,7 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<section>
+  <nav>
+    <a><%= link_to 'Masaze', home_masaze_path %></a>
+    <a><%= link_to 'Pohyb', home_pohyb_path %></a>
+    <a><%= link_to 'Vyziva', home_vyziva_path %></a>
+    <a><%= link_to 'Cenik', prices_path %></a>
+    <a><%= link_to 'Kontakt', kontakts_path_path %></a>
+  </nav>
+</section>
 <%= yield %>
 
 </body>
